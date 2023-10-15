@@ -27,9 +27,6 @@ export default function SignUp() {
         let resp = await fetch("https://next-js-somanathworld.vercel.app/api/signup", {
             method: "POST",
             cache: "no-cache",
-            headers: {
-                'Content-Type': "application/json",
-            },
             body: JSON.stringify(userDetails)
         });
         let data = await resp.json();
